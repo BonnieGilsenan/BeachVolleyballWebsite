@@ -16,7 +16,7 @@ body {
     margin-right: 15%;
     margin-bottom: 0;
 	background-color: white;
-    background-image: url("beachNetEdit.jpg");
+    background-image: url("images/beachNetEdit.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -32,7 +32,10 @@ footer {
     right: 0;
     left: 0;
     bottom: 0;
-	color:floralwhite;
+}
+
+#footer{
+    color:floralwhite;
 }
 
 h2 {
@@ -175,5 +178,5 @@ list-style-image: url("vector_volleyballEdit.png")
 */
 
 .secondaryBody ul {
-    list-style-image: url("vector_volleyballEdit3.png")
+    list-style-image: url("images/vector_volleyballEdit3.png")
 }
