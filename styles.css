@@ -56,6 +56,28 @@ li {
     font-weight: bold;
 }
 
+table, th, td{
+    border-style: solid;
+    border-color: darkslateblue;
+    border-width: 2px;
+    border-collapse: collapse;
+    padding: 0.5em 0.5em;
+}
+
+table th {
+    font-family: 'Karla', san-serif;
+    color: darkslateblue;
+    font-weight: bold;
+    background-color: lightsteelblue;
+}
+
+table td {
+    font-family: 'Karla', san-serif;
+    color: darkslateblue;
+}
+
+
+
 /*--Classes-----------------------------------------------------------*/ 
 
 /*  title  */
@@ -84,7 +106,8 @@ li {
     padding: 0;
     overflow: hidden;
     background-color: darkorange;
-    border-top-left-radius: 0.5em;
+    border-top-left-radius: 0.4em;
+	border-top-right-radius: 0.5em;
     font-family: 'Acme', san-serif;
     font-size: 18px;
     
@@ -163,20 +186,22 @@ li {
     background-color: #fdf2e7;
     position: relative;
     border-top-left-radius: 0.7em;
+	border-top-right-radius: 0.7em;
 }
 /*  Between navigation and footer  */
 .secondaryBody {
     padding-left: 1em;
     padding-right: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
     min-height: 30em;
 }
 
-/* 
-list-style-image: url("volleyballEdit2.png")
-list-style-image: url("vector_volleyballEdit.png")
-*/
 
 .secondaryBody ul {
     list-style-image: url("images/vector_volleyballEdit3.png")
+}
+
+.cite {
+	font-style: italic;
+	font-size: 13px;
 }
