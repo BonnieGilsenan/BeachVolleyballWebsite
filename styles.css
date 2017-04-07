@@ -1,62 +1,15 @@
-/* CSS for Beach Volleyball */
+/* 
 
-.title {
-	text-align: center;
-	padding-top:2%;
-	padding-bottom:1.7%;
-}
+CSS for Beach Volleyball 
 
-.navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: darkorange;
-}
+Fonts 
+    font-family: 'Acme', san-serif;
+    font-family: 'Karla', san-serif;
+    font-family: 'Sigmar One', cursive;
 
-.navigation li {
-    float: left;
-}
+*/
 
-.naviGators {
-    display: block;
-    text-decoration: none;
-    color:darkslateblue;
-    padding: 0.8em 0.5em;
-    text-align: center;
-}
-
-.naviGators:hover {
-    background-color: darkblue;
-}
-
-.signUpArea {
-    float: right;
-    display: block;
-    border-style: ridge;
-    border-color: mediumblue;
-    border-width: 3px;
-    padding: 4em 4em;
-    background-color: lightblue;
-}
-
-.signUp {
-    display: block;
-    text-decoration: none;
-    border-style: outset;
-    border-color: limegreen;
- /*   color:seagreen; */
-    color: blueviolet;
-
-    background-color: lime; 
-    padding: 1em 1em;
-    margin-block-start: 0.4em;
-    margin-block-end: 0.4em;
-    margin-right: 0.4em;
-    margin-left: 0.4em;
-    text-align: center;
-    border-radius: 0.5em;
-}
+/*--Elements--(Unless otherwise specified in classes)---------------------------------*/
 
 body {
     margin-left: 15%;
@@ -71,23 +24,6 @@ body {
 
 }
 
-.mainBody {
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    background-color: #fdf2e7;
-    position: relative;
-}
-
-.secondaryBody {
-    padding-left: 0.4em;
-    padding-right: 1em;
-    padding-bottom: 3em;
-}
-
-
 footer {
     display: block;
     background-color: blueviolet;
@@ -97,4 +33,126 @@ footer {
     left: 0;
     bottom: 0;
 	color:floralwhite;
+}
+
+h2 {
+    font-family: 'Acme', san-serif;
+}
+
+p {
+    font-family: 'Karla', san-serif;
+}
+
+/*--Classes-----------------------------------------------------------*/ 
+
+/*  title  */
+.title {
+	text-align: center;
+	padding-top:2%;
+	padding-bottom:1.7%;
+    font-family: 'Sigmar One', cursive;
+    font-size: 40px;
+    display: block;
+    background-color: deepskyblue;
+    border-radius: 2em;
+    border-style: solid;
+    border-color: ghostwhite;
+    border-width: 5px;
+    padding: 0.1em 0.2em;
+    margin-left: 6%;
+    margin-right: 6%;
+
+}
+
+/*  Navigation Bar  */
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkorange;
+    border-top-left-radius: 0.5em;
+    font-family: 'Acme', san-serif;
+    font-size: 18px;
+    
+}
+
+.navigation li {
+    float: left;
+}
+
+.naviGators {
+    display: block;
+    text-decoration: none;
+    color:darkslateblue;
+    padding: 0.8em 0.5em;
+    text-align: center;
+}
+
+.naviGators:hover:not(.active) {
+    background-color: lightskyblue;
+    color: darkblue;
+}
+
+
+.active {
+    background-color: darkblue;
+    color: white;
+}
+
+/*  Sign up Area  */
+.signUpArea {
+    float: right;
+    text-align: center;
+    display: block;
+    border-style: ridge;
+    border-color: mediumblue;
+    border-width: 5px;
+    padding: 2em 2em ;
+    background-color: lightskyblue;
+}
+
+/*  Sign up Button  */
+.signUp {
+    display: block;
+    text-decoration: none;
+    border-style: outset;
+    border-color: limegreen;
+    color: slateblue;
+    background-color: lime; 
+    padding: 1em 0.5em;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    margin-right: 2em;
+    margin-left: 2em;
+    text-align: center;
+    border-radius: 0.5em;
+    font-family: 'Acme', san-serif;
+    font-size: 20px;
+
+    /*  faint light glow around text to make it stand out  */
+    text-shadow: 0 0 0.2em lawngreen, 0 0 0.2em lawngreen, 0 0 0.2em lawngreen, 0 0 0.2em lawngreen, 0 0 0.2em lawngreen, 0 0 0.2em lawngreen, 0 0 0.2em lawngreen;
+}
+
+.signUp:active {
+    border-style: inset;
+}
+
+/*  Navigation to footer, no title  */
+.mainBody {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: #fdf2e7;
+    position: relative;
+    border-top-left-radius: 0.7em;
+}
+/*  Between navigation and footer  */
+.secondaryBody {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+    min-height: 18em;
 }
