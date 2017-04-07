@@ -37,10 +37,20 @@ footer {
 
 h2 {
     font-family: 'Acme', san-serif;
+    color: midnightblue;
 }
 
+/*  p and li serve essentially the same purpose  */
 p {
     font-family: 'Karla', san-serif;
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+li {
+    font-family: 'Karla', san-serif;
+    color: darkslateblue;
+    font-weight: bold;
 }
 
 /*--Classes-----------------------------------------------------------*/ 
@@ -108,8 +118,10 @@ p {
     border-style: ridge;
     border-color: mediumblue;
     border-width: 5px;
-    padding: 2em 2em ;
+    padding: 1em 1.7em ;
+    margin-left: 2em;
     background-color: lightskyblue;
+    color: darkslateblue;
 }
 
 /*  Sign up Button  */
@@ -154,5 +166,14 @@ p {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 3em;
-    min-height: 18em;
+    min-height: 30em;
+}
+
+/* 
+list-style-image: url("volleyballEdit2.png")
+list-style-image: url("vector_volleyballEdit.png")
+*/
+
+.secondaryBody ul {
+    list-style-image: url("vector_volleyballEdit3.png")
 }
